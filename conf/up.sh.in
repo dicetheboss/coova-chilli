@@ -104,3 +104,31 @@ then
 else
     run_up
 fi
+
+
+#ip down
+#iptables -D INPUT -i tun0 -p tcp -m tcp --dport 80 --dst 10.1.0.1 -j ACCEPT
+#iptables -D INPUT -i tun0 -p tcp -m tcp --dport 443 --dst 10.1.0.1 -j ACCEPT
+#iptables -D INPUT -i tun0 -p tcp -m tcp --dport 22 --dst 10.1.0.1 -j ACCEPT
+#iptables -D INPUT -i tun0 -p tcp -m tcp --dport 8000 --dst 10.1.0.1 -j ACCEPT
+#iptables -D INPUT -i tun0 -p tcp -m tcp --dport 21 --dst 10.1.0.1 -j ACCEPT
+#iptables -D INPUT -i tun0 -p tcp -m tcp --dport 20 --dst 10.1.0.1 -j ACCEPT
+
+#ip up
+#iptables -I INPUT -i tun0 -p tcp -m tcp --dport 80 --dst 10.1.0.1 -j ACCEPT
+#iptables -I INPUT -i tun0 -p tcp -m tcp --dport 443 --dst 10.1.0.1 -j ACCEPT
+#iptables -I INPUT -i tun0 -p tcp -m tcp --dport 22 --dst 10.1.0.1 -j ACCEPT
+#iptables -I INPUT -i tun0 -p tcp -m tcp --dport 8000 --dst 10.1.0.1 -j ACCEPT
+#iptables -I INPUT -i tun0 -p tcp -m tcp --dport 21 --dst 10.1.0.1 -j ACCEPT
+#iptables -I INPUT -i tun0 -p tcp -m tcp --dport 20 --dst 10.1.0.1 -j ACCEPT
+
+#HS_TCP_PORTS="80 443 22 8000 21 20"
+
+#/etc/sysconfig/iptables-config
+#IPTABLES_MODULES="ip_conntrack_ftp"
+#/etc/sysconfig/iptables
+#-A INPUT -p tcp -m tcp --dport 21 -j ACCEPT
+#-A INPUT -p tcp -m tcp --dport 20 -j ACCEPT
+
+
+
