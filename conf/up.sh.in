@@ -130,5 +130,5 @@ fi
 #-A INPUT -p tcp -m tcp --dport 21 -j ACCEPT
 #-A INPUT -p tcp -m tcp --dport 20 -j ACCEPT
 
-
+#ethtool -K eth0 gso off gro off tso off
 
